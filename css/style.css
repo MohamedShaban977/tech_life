@@ -246,7 +246,7 @@ body {
       .card_side--back-1 {
         background-image: linear-gradient(to right bottom, #ad00ab, #0f335c); }
       .card_side--back-2 {
-        background-image: linear-gradient(to right bottom, #050872, #070335); }
+        background-image: linear-gradient(to right bottom, #760c63, #070335); }
       .card_side--back-3 {
         background-image: linear-gradient(to right bottom, #760c63, #470b4b); }
   .card:hover .card_side--front {
@@ -300,7 +300,32 @@ body {
   .card_cta {
     position: absolute;
     top: 50%;
-    left: 50%; }
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card_price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+    .card_price-box-only {
+      font-size: 1.8rem; }
+    .card_price-box-value {
+      font-size: 6rem;
+      font-weight: 300; }
+  @media only screen and (max-width: 5.25em), only screen and (hover: non) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card_side {
+        height: auto;
+        position: relative;
+        box-shadow: non; }
+        .card_side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); } }
 
 .composition {
   position: relative; }
@@ -356,17 +381,19 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
+  min-height: 25rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s; }
   @media only screen and (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
   .feature-box_text {
-    font-size: 15px; }
+    font-size: 15px;
+    margin-top: 3rem; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 

@@ -1,13 +1,13 @@
 .feature-box {
-
     background-color: rgba($color-white,0.8);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
+    min-height: 25rem;
+
     box-shadow: 0 1.5rem 4rem rgba($color-black,0.15);
     transition: transform 0.3s;
-    // transform: ;
     @include respond(tab-port){
         padding: 2rem;
     }
@@ -27,6 +27,7 @@
 
     &_text {
         font-size: 15px;
+        margin-top: 3rem;
 
     }
     &:hover {
